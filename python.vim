@@ -27,6 +27,7 @@ noremap <silent> <buffer> [[ :call <SID>Python_jump('n', '\v^(class\|def)>', 'Wb
 noremap <silent> <buffer> ]m :call <SID>Python_jump('n', '\v%$\|^\s*(class\|def)>', 'W')<cr>
 noremap <silent> <buffer> [m :call <SID>Python_jump('n', '\v^\s*(class\|def)>', 'Wb')<cr>
 
+" override for select & visual modes, since we will need to preserve the selection
 xnoremap <silent> <buffer> ]] :call <SID>Python_jump('x', '\v%$\|^(class\|def)>', 'W')<cr>
 xnoremap <silent> <buffer> [[ :call <SID>Python_jump('x', '\v^(class\|def)>', 'Wb')<cr>
 xnoremap <silent> <buffer> ]m :call <SID>Python_jump('x', '\v%$\|^\s*(class\|def)>', 'W')<cr>
